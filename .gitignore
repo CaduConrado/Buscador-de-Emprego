@@ -1,0 +1,26 @@
+# Ignorar node_modules (dependências do projeto)
+node_modules/
+
+# Ignorar logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar builds (caso o projeto tenha uma pasta de build)
+dist/
+build/
+
+# Ignorar arquivos de ambiente
+.env
+
+# Ignorar caches
+.cache/
+.vscode/
+.DS_Store  # No macOS, pode criar esses arquivos
+
+# Ignorar relatórios de cobertura de testes
+coverage/
+
+# Ignorar arquivos temporários do sistema
+*.tmp
+*.swp

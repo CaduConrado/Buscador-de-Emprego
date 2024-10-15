@@ -1,0 +1,27 @@
+{
+  "name": "buscador_de_emprego",
+  "version": "1.0.0",
+  "description": "App para desenvolvedores de software  encontrarem vagas de emprego.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "job",
+    "finder",
+    "job",
+    "opportunity"
+  ],
+  "author": "Cadu Conrado",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "sequelize": "^6.37.4",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
