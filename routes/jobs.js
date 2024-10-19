@@ -1,10 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const Job = require("../models/job");
+const Job = require("../models/Job");
 
 //test
 router.get("/test", (req, res) => {
   res.send("deu certo");
+});
+
+//get do formulario
+router.get("/add", (req, res) => {
+  res.render("add");
 });
 
 //adiciona job via post

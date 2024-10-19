@@ -1,0 +1,33 @@
+<div class="container-fluid" id="top-container">
+        <h1 id="main-title" class="text-center">Encontre o seu emprego desejado</h1>
+        <p id="main-subtitle" class="text-center">O site especializado em vagas de tecnologia.</p>
+        <form action="" id="search-form" class="form-inline">
+            <div class="form-group col-md-10">
+                <input type="text" name="job" id="job" placeholder="Digite a vaga">
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">Procurar</button>
+            </div>
+        </form>
+    </div>
+    <main>
+        <div id="jobs-container" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="job-list-title">Principais Vagas</h2>
+                    <ul id="job-list" class="list-group">
+                        {{#each jobs}}
+                        <li class="list-group-item {{#if dataValues.new-job}} new-job {{/if}}">
+                            <img src="/img/company.svg" alt="Company">
+                            <p>{{dataValues.company}}</p>
+                            <h2>{{dataValues.title}}</h2>
+                            <p>{{dataValues.salary}}</p>
+                            <span class="new-job-label">Nova</span>
+                            <a class="btn btn-primary">Ver Vaga</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
